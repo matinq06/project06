@@ -1,0 +1,72 @@
+$c-naranjarojo:orangered;
+$c-aguamarina:aquamarine;
+$c-cadetazul:cadetblue;
+$c-naranja:orange;
+$c-negro:black;
+$c-azul:blue;
+$c-rojo:rgb(161, 14, 14);
+
+$ff-oswald:'Oswald', sans-serif;
+
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+ul ol {
+    list-style: none;
+}
+
+h2{
+
+    text-align: center;
+
+}
+
+
+h3{
+    color: whitesmoke;
+    text-align: center;
+}
+
+html{
+
+    background:url(../img/fondos-de-pantalla-de-colores-lisos-espanol-hd-wallpapers-y.-fondo-para-movil-lisos-576x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+main h2{
+    color: black;
+    font-family:'Oswald', sans-serif ;
+}
+
+
+.parrafo{
+    font-size: 1rem;
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    // Estilos para tablet 
+
+    main h2 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    }
+
+    .parrafo {
+    font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    
+    body {
+    font-size: 16px;
+    }
+}

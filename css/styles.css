@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul ol {
+  list-style: none;
+}
+
+label{
+  display: none;
+}
+
+input{
+  display: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+html {
+  background: url(../img/fondos-de-pantalla-de-colores-lisos-espanol-hd-wallpapers-y.-fondo-para-movil-lisos-576x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main h2 {
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+main {
+  border-bottom: white solid 1px;
+}
+
+.parrafo {
+  font-size: 1rem;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  main h2 {
+    color: black;
+    font-family: "Oswald", sans-serif;
+  }
+  .parrafo {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.carrusel .elemento {
+  flex: 1 0 auto;
+  background-color: orangered;
+  width: 200px;
+  height: 325px;
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+.carrusel .elemento img {
+  max-width: 100%;
+  height: 40;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .carrusel {
+    margin-bottom: 20px;
+  }
+  .carrusel .elemento {
+    flex: 0 0 auto;
+  }
+}
+
+.color-rojo {
+  color: rgb(161, 14, 14);
+}
+
+footer {
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+  footer {
+    text-align: center;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form div {
+  margin-bottom: 20px;
+}
+form ul {
+  list-style: none;
+  padding: 0;
+}
+form ul li {
+  margin-bottom: 10px;
+}
+form label {
+  font-weight: bold;
+  display: block;
+}
+form input,
+form textarea {
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form input[type=submit],
+form input[type=reset] {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+form input[type=submit]:hover,
+form input[type=reset]:hover {
+  background-color: #0056b3;
+}
+
+header {
+  background-color: orange;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+}
+header ul li {
+  text-align: center;
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+header ul li:hover a {
+  background-color: orangered;
+}
+header form {
+  display: none;
+}
+
+@media (min-width: 375px) and (max-width: 850px){
+    /************************ INICIO MENU HAMBURGUESA ***********************/
+
+  hr {
+    display: none;
+  }
+
+  .menu-principal{
+    display: none;
+  }
+
+  #hamburger-btn:checked  ~ .menu-principal{
+    display:block;
+    position: absolute;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+
+  .label-burguer {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-right: 120px;
+  }
+
+  .label-burguer:hover{
+    background: orange;
+  }
+
+  #hamburger-btn:checked ~ .label-burguer {
+    background: white; 
+  }
+
+  .menu-principal{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+    background: orange;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+
+  li:hover {
+    filter: brightness(110%);
+  }
+
+  /************************** FIN MENU HAMBURGUESA ************************/
+
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+  section {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .carrusel {
+    display: none;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  header {
+    padding: 2rem;
+  }
+}
+
+#navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#navegacion ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+#navegacion ul li a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+#navegacion ul li a:hover {
+  background-color: orangered;
+}
+
+.productos {
+  border: 2px solid white;
+  width: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: cadetblue;
+  margin-bottom: 20px;
+}
+.productos .productos-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+}
+.productos .productos-body img {
+  width: 100%;
+}
+.productos .productos-body a {
+  background-color: aquamarine;
+  color: black;
+  padding: 0.5rem 0.5;
+  border: 2px solid black;
+  border-color: blue;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .productos {
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+  }
+  .productos .productos-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .productos .productos-body img {
+    width: 100%;
+  }
+  .productos .productos-body a {
+    background-color: aquamarine;
+    color: black;
+    padding: 0.5rem 0.5;
+    border: 2px solid black;
+    border-color: blue;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  body {
+    font-family: "Oswald", sans-serif;
+  }
+}
+.stout {
+  text-align: center;
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .stout {
+    text-align: center;
+  }
+}
+
+.preferidas {
+  display: flex;
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .preferidas {
+    display: flex;
+  }
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contenedor .elemento {
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+  }
+}
+
+.carrito {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: orangered;
+}
+
+.preferidas {
+  display: flex;
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .preferidas {
+    display: flex;
+  }
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contenedor .elemento {
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+  }
+}
+
+.preferidas {
+  display: flex;
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .preferidas {
+    display: flex;
+  }
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contenedor .elemento {
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+.color-rojo {
+    color: $c-rojo;
+
+}
+
+footer{
+
+    font-family: $ff-oswald;
+}
+
+@media (min-width:375px) and (max-width:576px) {
+
+    footer {
+
+        text-align: center;
+    }
+    
+
+}

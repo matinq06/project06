@@ -1,0 +1,86 @@
+  // Estilos adicionales para el menú desplegable 
+#navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+    display: inline-block;
+    margin-right: 10px;
+
+    a {
+        color: white;
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+
+        &:hover {
+        background-color: $c-naranjarojo;
+        }
+    }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 850px){
+    /************************ INICIO MENU HAMBURGUESA ***********************/
+
+    hr {
+      display: none;
+    }
+  
+    .menu-principal{
+      display: none;
+    }
+  
+    #hamburger-btn:checked  ~ .menu-principal{
+      display:block;
+      position: absolute;
+    }
+  
+    #hamburger-btn {
+      display: none;
+    }
+  
+    .label-burguer {
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+      margin-right: 120px;
+    }
+  
+    .label-burguer:hover{
+      background: orange;
+    }
+  
+    #hamburger-btn:checked ~ .label-burguer {
+      background: white; 
+    }
+  
+    .menu-principal{
+      margin-top:0;
+      padding: 0;
+      width: 200px;
+      background: orange;
+    }
+  
+    nav li {
+      display: block;
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      border-bottom: 1px solid grey;
+    }
+  
+    li:hover {
+      filter: brightness(110%);
+    }
+  /************************** FIN MENU HAMBURGUESA ************************/
+
+}
